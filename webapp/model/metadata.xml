@@ -1,0 +1,21 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="book.services.VerkaufszahlenService">
+<EntityType Name="VerkaufszahlenType">
+<Key>
+<PropertyRef Name="KEY"/>
+</Key>
+<Property Name="KEY" Type="Edm.String" Nullable="false" MaxLength="2147483647"/>
+<Property Name="SUB_REGION_NAME" Type="Edm.String" MaxLength="120"/>
+<Property Name="REGION_NAME" Type="Edm.String" MaxLength="120"/>
+<Property Name="PRODUCT_NAME" Type="Edm.String" MaxLength="120"/>
+<Property Name="SALES_AMOUNT" Type="Edm.Double"/>
+</EntityType>
+<EntityContainer Name="VerkaufszahlenService" m:IsDefaultEntityContainer="true">
+<EntitySet Name="Verkaufszahlen" EntityType="book.services.VerkaufszahlenService.VerkaufszahlenType"/>
+</EntityContainer>
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>
+
+
